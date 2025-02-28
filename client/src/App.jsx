@@ -5,22 +5,19 @@ import { IoLogoNodejs } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
-import { CiSearch } from "react-icons/ci";
 
 const App = () => {
-
-    const darkMod = () => {
-      if (localStorage.getItem("dark")) {
-        document.documentElement.classList.add("dark");
-      }
-      document.documentElement.classList.toggle("dark");
-      if (document.documentElement.classList.contains("dark")) {
-        localStorage.setItem("dark", true);
-      } else {
-        localStorage.removeItem("dark");
-      }
-      console.log("dark mod deyisdi");
-    };
+  const darkMod = () => {
+    if (localStorage.getItem("dark")) {
+      document.documentElement.classList.add("dark");
+    }
+    document.documentElement.classList.toggle("dark");
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.setItem("dark", true);
+    } else {
+      localStorage.removeItem("dark");
+    }
+  };
 
   return (
     <div className="h-full bg-white flex flex-col  dark:bg-gray-900 dark:text-white">

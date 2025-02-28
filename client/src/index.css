@@ -6,13 +6,15 @@
   .nav-link {
     @apply flex items-center h-10 rounded px-3 text-base text-teal-600 font-medium hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white;
   }
-  .nav-link.active{
+
+  .nav-link.active {
     @apply bg-gray-600 text-white
   }
 }
 
 @layer base {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
   html {
     font-family: "Montserrat", sans-serif;
   }
